@@ -23,10 +23,10 @@ if debug:
 usStates = {
 	"AK": ["","",""], 
 	"AL": ["","",""],
-	"AR": ["Powerball","Mega Millions"],
+	"AR": ["Powerball","Mega Millions","Lucky for Life","Cash 3","Cash 4","Natural State Jackpot"],
 	"AZ": ["Powerball","Mega Millions","Pick 3","Fantasy 5"],
-	"CA": ["Powerball","Mega Millions"],
-	"CO": ["Powerball","Mega Millions"],
+	"CA": ["Powerball","Mega Millions","SuperLotto Plus","Daily 3","Daily 4"],
+	"CO": ["Powerball","Mega Millions","Cash 5","Pick 3","Colorado Lotto"],
 	"CT": ["Powerball","Mega Millions"],
 	"DE": ["Powerball","Mega Millions"],
 	"FL": ["Powerball","Mega Millions"],
@@ -83,8 +83,18 @@ lotteryGames = {
 	"Cash4Life": [5,60,1,4],
 	"Numbers": [0,0,0,0,3,9],
 	"Win 4": [0,0,0,0,4,9],
-	"Fantasy 5": [5,41,0,0]
-
+	"Fantasy 5": [5,41,0,0],
+	"Lucky for Life": [5,48,1,18],
+	"Cash 3": [0,0,0,0,3,9],
+	"Cash 4": [0,0,0,0,4,9],
+	"Natural State Jackpot": [5,39,0,0],
+	"SuperLotto Plus": [5,47,1,27],
+	"Daily 3": [0,0,0,0,3,9],
+	"Daily 4": [0,0,0,0,4,9],
+	"Cash 5": [5,32,0,0],
+	"Colorado Lotto": [6,42,0,0],
+	"Lotto!": [6,44,0,0],
+	"Cash5": [5,35,0,0],
 }
 
 class Lottery:
@@ -93,6 +103,7 @@ class Lottery:
 
 		print "\nStarting Lottery Numbers\n"
 
+	
 	def stateSelector(self):
 		state = raw_input("Which state are you in? (Please use state initials)\n").upper()
 		if state.upper() in usStates:
